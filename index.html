@@ -25,13 +25,13 @@
 <body>
     <h1>Redux Store</h1>
     <div id="count">0</div>
-    <button onclick="store.dispatch({ type: 'ADD' })">Add</button>
-    <button onclick="store.dispatch({ type: 'SUBTRACT' })">Subtract</button>
-    <button onclick="store.dispatch({ type: 'RESET' })">Reset</button>
+    <button id="addBtn">Add</button>
+    <button id="subtractBtn">Subtract</button>
+    <button id="resetBtn">Reset</button>
 
     <script>
         function createStore(reducer) {
-            let state;
+            let state = reducer(undefined, {});
             let listeners = [];
 
             const getState = () => state;
@@ -48,7 +48,6 @@
                 };
             };
             
-            dispatch({});
             return { getState, dispatch, subscribe };
         }
 
@@ -68,11 +67,24 @@
         const store = createStore(counterReducer);
 
         function updateUI() {
-            document.getElementById("count").innerText = store.getState().count;
+            const countElement = document.getElementById("count");
+            if (countElement) {
+                countElement.innerText = store.getState().count;
+            }
             console.log("State Updated:", store.getState());
         }
 
         store.subscribe(updateUI);
+
+        const addBtn = document.getElementById("addBtn");
+        const subtractBtn = document.getElementById("subtractBtn");
+        const resetBtn = document.getElementById("resetBtn");
+
+        if (addBtn) addBtn.addEventListener("click", () => store.dispatch({ type: "ADD" }));
+        if (subtractBtn) subtractBtn.addEventListener("click", () => store.dispatch({ type: "SUBTRACT" }));
+        if (resetBtn) resetBtn.addEventListener("click", () => store.dispatch({ type: "RESET" }));
+
+        updateUI();
     </script>
 </body>
 </html>
