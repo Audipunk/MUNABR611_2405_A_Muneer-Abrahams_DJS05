@@ -1,50 +1,62 @@
-const initialState = {
-    count: 0,
+// Minimal Redux-inspired store
+function createStore(reducer) {
+  let state;
+  let listeners = [];
+
+  // Returns the current state
+  const getState = () => state;
+
+  // Dispatches an action to update the state
+  const dispatch = (action) => {
+      state = reducer(state, action);
+      listeners.forEach(listener => listener());
   };
-  
-  // Different types of actions
-  const ADD = "ADD";
-  const SUBTRACT = "SUBTRACT";
-  const RESET = "RESET";
-  
-  // Handle actions and update state
-  function reducer(state = initialState, action) {
-    switch (action.type) {
-      case ADD:
-        return { ...state, count: state.count + 1 };
-      case SUBTRACT:
-        return { ...state, count: state.count - 1 };
-      case RESET:
-        return { count: 0 };
+
+  // Subscribes a function to state changes
+  const subscribe = (listener) => {
+      listeners.push(listener);
+      return () => {
+          listeners = listeners.filter(l => l !== listener);
+      };
+  };
+
+  // Initialize the state
+  dispatch({});
+
+  return { getState, dispatch, subscribe };
+}
+
+// Reducer function to handle state changes
+function counterReducer(state = { count: 0 }, action) {
+  switch (action.type) {
+      case "ADD":
+          return { count: state.count + 1 };
+      case "SUBTRACT":
+          return { count: state.count - 1 };
+      case "RESET":
+          return { count: 0 };
       default:
-        return state;
-    }
+          return state;
   }
-  
-  // Creates the store
-  function initializeStore(reducer) {
-    let currentState = initialState;
-    let listeners = [];
-    return {
-      getState: () => currentState,
-      dispatch: (action) => {
-        currentState = reducer(currentState, action);
-        listeners.forEach((listener) => listener());
-      },
-      subscribe: (listener) => {
-        listeners.push(listener);
-        return () => {
-          listener.filter(listeners);
-        };
-      },
-    };
-  }
-  
-  let myStore = initializeStore(reducer);
-  
-  // SCENARIO 1: Initial state verification
-  console.log(myStore.getState());
-  
-  //Subscribe to state changes
-  myStore.subscribe(() => console.log(myStore.getState()));
-  console.log(myStore.getState());
+}
+
+// Create the store
+const store = createStore(counterReducer);
+
+// Subscribe to state changes and log them
+store.subscribe(() => {
+  console.log("State Updated:", store.getState());
+});
+
+// SCENARIO 1: Initial State Verification
+console.log("Initial State:", store.getState()); // Should log { count: 0 }
+
+// SCENARIO 2: Incrementing the Counter
+store.dispatch({ type: "ADD" });
+store.dispatch({ type: "ADD" }); // Should log { count: 2 }
+
+// SCENARIO 3: Decrementing the Counter
+store.dispatch({ type: "SUBTRACT" }); // Should log { count: 1 }
+
+// SCENARIO 4: Resetting the Counter
+store.dispatch({ type: "RESET" }); // Should log { count: 0 }
