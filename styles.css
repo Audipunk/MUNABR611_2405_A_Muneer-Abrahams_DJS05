@@ -30,7 +30,7 @@ body {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #ad6268;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -40,9 +40,9 @@ button {
     font-size: 1em;
     position: relative; 
     overflow: hidden; 
-     box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); 
+     box-shadow: 0 0 8px rgba(76, 91, 107, 0.8); 
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #6a8db3;
 }
