@@ -1,0 +1,8 @@
+/redux-counter/
+│── index.html
+│── js/
+│   ├── store.js        (Handles state management)
+│   ├── reducer.js      (Handles state transitions)
+│   ├── middleware.js   (Middleware for logging, future async support)
+│   ├── ui.js           (Handles DOM updates and event listeners)
+│   ├── main.js         (Main entry point, connects everything)
