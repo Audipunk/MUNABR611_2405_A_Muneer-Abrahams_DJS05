@@ -1,6 +1,17 @@
 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #1c9fa8, #50d9f1);
+    background-size: 400% 400%;
+}
+
 .container {
-    background-color: #6edbd2;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -14,13 +25,13 @@
 .counter h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    background-color: #31ada7;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    background-color: #6975e6;
-    color: #6e74c2;
+    background-color: #ad6268;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -33,5 +44,5 @@ button {
 }
 
 button:hover {
-    background-color: #d3f8c7;
+    background-color: #6a8db3;
 }
