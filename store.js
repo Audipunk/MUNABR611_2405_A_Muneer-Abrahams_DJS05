@@ -3,6 +3,7 @@ function createStore(reducer) {
   let state;
   let listeners = [];
 
+  
   // Returns the current state
   const getState = () => state;
 
