@@ -1,15 +1,4 @@
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(45deg, #6f8ae2, #41c096);
-    background-size: 400% 400%;
-}
-
 .container {
     background-color: #6edbd2;
     padding: 20px;
