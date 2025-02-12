@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    background: linear-gradient(45deg, #6f8ae2, #b8a377);
     background-size: 400% 400%;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 button {
-    background-color: #ad6268;
+    background-color: #6975e6;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -44,5 +44,5 @@ button {
 }
 
 button:hover {
-    background-color: #6a8db3;
+    background-color: #d3f8c7;
 }
