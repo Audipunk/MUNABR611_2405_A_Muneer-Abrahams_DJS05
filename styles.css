@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
+.button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -42,6 +42,6 @@ button {
      box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); 
 }
 
-button:hover {
+.button:hover {
     background-color: #0056b3;
 }
