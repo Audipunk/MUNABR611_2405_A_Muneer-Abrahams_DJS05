@@ -24,17 +24,18 @@ body {
 .counter h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #499b7b;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
+    margin: 5px;
 }
 
 .button {
     background-color: #007bff;
     color: hwb(167 30% 33%);
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
