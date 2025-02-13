@@ -5,12 +5,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(45deg, hsl(152, 72%, 46%), #f7d794);
+    background: linear-gradient(45deg, hsl(152, 72%, 46%), hsl(157, 66%, 41%));
     background-size: 400%, 400%;
 }
 
 .container {
-    background-color: #fff;
+    background-color: hsl(212, 68%, 81%);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ body {
 
 .button {
     background-color: #007bff;
-    color: #fff;
+    color: hwb(167 30% 33%);
     border: none;
     padding: 10px 20px;
     margin: 5px;
