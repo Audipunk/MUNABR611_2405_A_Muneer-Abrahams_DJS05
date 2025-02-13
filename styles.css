@@ -29,19 +29,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    background-color: #ad6268;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    position: relative; 
-    overflow: hidden; 
-     box-shadow: 0 0 8px rgba(76, 91, 107, 0.8); 
-}
 
 button:hover {
     background-color: #6a8db3;
