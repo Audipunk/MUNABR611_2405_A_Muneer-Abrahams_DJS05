@@ -31,7 +31,7 @@ body {
     margin: 5px;
 }
 
-.button {
+button {
     background-color: #007bff;
     color: hwb(167 30% 33%);
     border: none;
