@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #1dd5ac;
-    background: linear-gradient(45deg, hsl(152, 72%, 46%), hsl(157, 66%, 41%));
+    background: linear-gradient(#1dd5ac, 45deg, hsl(152, 72%, 46%), hsl(157, 66%, 41%));
     background-size: 400%, 400%;
 }
 
