@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    background: linear-gradient(45deg, hsl(152, 72%, 46%), #f7d794);
     background-size: 400%, 400%;
 }
 
@@ -26,6 +26,8 @@ body {
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .button {
