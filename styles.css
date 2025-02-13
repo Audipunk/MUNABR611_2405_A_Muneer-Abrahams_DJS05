@@ -1,4 +1,4 @@
-.body {
+body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     height: 100vh;
     margin: 0;
     background: linear-gradient(45deg, #ff6b6b, #f7d794);
-    background-size: 400% 400%;
+    background-size: 400%, 400%;
 }
 
 .container {
