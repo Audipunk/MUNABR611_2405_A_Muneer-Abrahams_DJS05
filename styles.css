@@ -28,7 +28,7 @@ div {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .counter h2 {
@@ -52,7 +52,7 @@ button {
     font-size: 1em;
     position: relative; 
     overflow: hidden; 
-     box-shadow: 0 0 8px rgba(231, 206, 62, 0.8); 
+     box-shadow: 0 0 8px #a5cce5cc; 
 }
 
 .button:hover {
