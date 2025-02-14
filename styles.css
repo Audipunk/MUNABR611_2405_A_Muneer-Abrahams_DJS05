@@ -30,6 +30,7 @@ div {
     border-radius: 5px;
     cursor: pointer;
     font-size: 2em;
+    text-align: flex-end;
 }
 
 .counter h2 {
