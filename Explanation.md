@@ -31,34 +31,39 @@
 
 This is a simple Redux store implementation that manages the state of a tally counter. It showcases how to manage the state with actions and a reducer while logging the results to the console.
 
-## How to Run the Code
+## Running the Code
 
-1. Download/Clone the repository: Download or clone this repository to your local machine.
+1. Download or Clone the Repository
 
-2. Open the project folder: Navigate to the project folder where the files are located.
+- Clone the repository using Git or download it as a ZIP file and extract it to your local machine.
 
-3. Open index.html in a browser:
+2. Navigate to the Project Folder
 
-- If you are using a local server (e.g., Live Server in VS Code), you can open index.html in your browser directly.
+- Open the folder where the project files are located.
 
-- Alternatively, you can use any static file server to serve the project files.
+3. Open index.html in a Browser
 
-4. Check the Console: Open your browser's Developer Tools (press F12 or Ctrl+Shift+I), go to the Console tab, and you'll see the state changes as actions are dispatched.
+- If using a local server (e.g., Live Server in VS Code), open index.html directly in your browser.
+- Alternatively, use any static file server to serve the project files.
+
+4. Check the Console for State Changes
+
+- Open your browser’s Developer Tools (F12 or Ctrl + Shift + I).
+- Go to the Console tab to view the state updates as actions are dispatched.
+
 
 ## Overview
-In this project, I implemented a Redux-inspired store with the following features:
 
-- State Management: The state is managed centrally in a store, and actions are dispatched to update the state.-
-- Actions: There are three types of actions — ADD, SUBTRACT, and RESET — which modify the state accordingly.-
-- Reducer: The reducer function listens for the dispatched actions and returns the updated state.-
-- Subscription: A subscriber function listens for state changes and logs the updated state to the console whenever a change occurs.-
+This project features a Redux-inspired store designed to manage a tally counter's state efficiently. It includes the following key components:
 
-## Files:
+- State Management: A centralized store maintains the state, which updates through dispatched actions.
+- Actions: Supports three action types—ADD, SUBTRACT, and RESET—to modify the state accordingly.
+- Reducer: A function that processes dispatched actions and returns the updated state.
+- Subscription: A subscriber function listens for state changes and logs updates to the console.
 
-- actions.js: {Defines the action types (ADD, SUBTRACT, RESET) and action creators.}
+## Files
 
-- reducers.js: {Contains the tallyReducer function that handles state updates based on the dispatched actions.}
-
-- store.js: {Implements the store logic with methods getState, dispatch, and subscribe to interact with the state.}
-
-- script.js: Handles the logic for dispatching actions and observing state changes, simulating real-world scenarios {like adding, subtracting, and resetting the counter.}
+- actions.js – Defines action types (ADD, SUBTRACT, RESET) and their corresponding action creators.
+- reducers.js – Contains the tallyReducer function, which updates the state based on the dispatched actions.
+- store.js – Implements the store logic with methods like getState, dispatch, and subscribe.
+- script.js – Manages action dispatching and observes state changes, simulating real-world interactions (e.g., incrementing, decrementing, and resetting the counter).
