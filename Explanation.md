@@ -27,7 +27,7 @@
 
 - Write unit tests for the reducer, actions, and store        functionality using Jest.
 
-# Redux App
+## Redux App
 
 This is a simple Redux store implementation that manages the state of a tally counter. It showcases how to manage the state with actions and a reducer while logging the results to the console.
 
@@ -37,20 +37,19 @@ This is a simple Redux store implementation that manages the state of a tally co
 
 - Clone the repository using Git or download it as a ZIP file and extract it to your local machine.
 
-2. Navigate to the Project Folder
+2: Navigate to the Project Folder
 
 - Open the folder where the project files are located.
 
-3. Open index.html in a Browser
+3: Open index.html in a Browser,
 
 - If using a local server (e.g., Live Server in VS Code), open index.html directly in your browser.
 - Alternatively, use any static file server to serve the project files.
 
-4. Check the Console for State Changes
+4: Check the Console for State Changes
 
 - Open your browser’s Developer Tools (F12 or Ctrl + Shift + I).
 - Go to the Console tab to view the state updates as actions are dispatched.
-
 
 ## Overview
 
